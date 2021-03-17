@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+
+
+<!-- meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- /meta -->
+
+<!-- styles -->
+<link type="text/css" rel="stylesheet" href="/static/css/all.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/styles.css">
+<!-- /styles-->
+
+<!-- favicons -->
+<link rel="shortcut icon" type="image.png" href="/static/ico/favicon-16.png" sizes="16x16">
+<link rel="shortcut icon" type="image.png" href="/static/ico/favicon-32.png" sizes="32x32">
+<!-- /favicons -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__wrapper">
+      <button class="button-circle button-circle--secondary site-header__toggle"> <i class="material-icons">menu</i> </button>
+      <button class="button-circle button-circle--secondary site-header__toggle"> <i class="material-icons">menu</i> </button>
+      <a class="site-header__logo site__logo" href="https://printify.com/" rel="home"></a>
+      <nav class="site-navigation">
+        <div class="site-navigation__overlay">  
+        </div>
+        <div class="site-navigation__wrapper">
+          <div class="site-navigation__logo">
+            <img class="site-navigation__logo__img" src="/static/img/logo.svg" alt="Printify logo">
+          </div>
+          <div class="site-navigation__links"> 
+            <a class="link--secondary site-navigation__link" href="/app/products">Catalog</a>
+            <a class="link--secondary site-navigation__link" href="https://printify.com/how-it-works/">How it works</a>
+            <a class="link--secondary site-navigation__link site-navigation__link--active" href="https://printify.com/pricing/">Pricing</a>
+            <a class="link--secondary site-navigation__link" href="https://printify.com/blog/">Blog</a>
+            <a class="link--secondary site-navigation__link" href="https://help.printify.com/">Help center</a>
+          </div>
+          <div class="site-navigation__auth">
+            <div class="site-navigation__auth__buttons">
+              <a href="/app/login"> <button class="button button--secondary"> Log in </button> </a>
+              <a href="/app/register"> <button class="button button--primary"> Sign up </button> </a>
+            </div> 
+            <a href="/app/store/products" class="site-navigation__auth__open-app"> <button class="button button--primary site-header__button">My store</button> </a>
+          </div>
+        </div>
+      </nav>
+      <div class="site-header__auth"><div class="site-header__auth__buttons"> 
+        <a href="/app/login"> <button class="button button--secondary site-header__button"> Log in </button> </a>
+        <a href="/app/register"> <button class="button button--primary site-header__button"> Sign up </button> </a>
+      </div> 
+      <a href="/app/store/products" class="site-header__auth__open-app"> <button class="button button--primary site-header__button">My store</button> </a>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer class="site-footer">
+    <div class="site-footer__social">
+      <a class="site-footer__logo site__logo" href="https://printify.com/" rel="home"></a>
+      <div class="site-social-links-menu">
+        <a href="https://www.facebook.com/Printify/" title="Facebook" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/07/facebook-icon.svg" alt="Facebook"> </a>
+        <a href="https://www.instagram.com/printify/" title="Instagram" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/01/instagram-icon.svg" alt="Instagram"> </a>
+        <a href="https://www.linkedin.com/company/printify/" title="Linkedin" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/01/linkedin-icon.svg" alt="Linkedin"> </a>
+        <a href="https://twitter.com/printify" title="Twitter" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/01/twitter-icon.svg" alt="Twitter"> </a>
+        <a href="https://www.youtube.com/channel/UCD-mPjd8cN3qjoxcE-_Fr5g" title="Youtube" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/01/youtube-icon.svg" alt="Youtube"> </a>
+        <a href="https://www.reddit.com/r/Printify/" title="Reddit" target="_blank" rel="noopener"> <img src="https://printify.com/wp-content/uploads/2019/01/reddit-icon.svg" alt="Reddit"> </a>
+      </div>
+    </div>
+    <div class="grid footer-navigation__links">
+      <div class="col--6 col--sm-6 col--lg-2">
+        <h4 class="footer-navigation__subtitle subtitle">Integrations</h4>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/shopify/">Shopify</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/etsy/">Etsy</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/ebay/">eBay</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/prestashop/">PrestaShop</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/bigcommerce/">BigCommerce</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/wix/">WIX</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/woocommerce/">WooCommerce</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/printify-api/">Printify API</a>
+      </div>
+      <div class="col--6 col--sm-6 col--lg-2">
+        <h4 class="footer-navigation__subtitle subtitle">Discover</h4>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/blog/">Blog</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/guides/">Guides</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/app/products">Products</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/app/brands">Brands</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/pricing/">Pricing</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/shipping-rates/">Shipping rates</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/mockup-generator/">Mockup Generator</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/ecommerce-statistics/">Ecommerce Statistics</a>
+      </div>
+      <div class="col--6 col--sm-6 col--lg-2">
+        <h4 class="footer-navigation__subtitle subtitle">Start selling</h4>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/sell-on-etsy-drop-shipping/">Sell on Etsy</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/sell-on-shopify-print-on-demand/">Sell on Shopify</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/sell-on-woocommerce/">Sell on WooCommerce</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/sell-on-wix/">Sell on Wix</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/make-your-own-shirt/">Make your own shirt</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/free-t-shirt-designs/">Free T-shirt Designs</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/custom-products/">Custom Products</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/all-over-print-shirts-and-other-products/">Custom All Over Print T-shirts, Sweatshirts &amp; More</a>
+      </div>
+      <div class="col--6 col--sm-6 col--lg-2">
+        <h4 class="footer-navigation__subtitle subtitle">Printify</h4>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/print-on-demand/">Print on Demand</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/app/print-providers">Print Providers</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/become-a-print-provider/">Become a Print Provider</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/about/">About</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/jobs/">Jobs</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/contacts/">Contacts</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/merchant-protection/">Merchant protection</a>
+        <a class="link--secondary small-text footer-navigation__link" href="https://printify.com/affiliate/">Affiliate</a>
+      </div>
+    </div>
+    <div class="site-info ">
+      <div class="site-info__bg full-width-bg" style="width: 330px;">
+      </div>
+      <div class="site-info__content">
+        <div class="site-info__links">
+          <a class="link--alternative site-info__link small-text" href="https://printify.com/intellectual-property-policy/">Intellectual Property Policy</a>
+          <a class="link--alternative site-info__link small-text" href="https://printify.com/terms-of-service/">Terms of Service</a>
+          <a class="link--alternative site-info__link small-text" href="https://printify.com/privacy-policy/">Privacy Policy</a>
+        </div>
+        <p class="site-info__copy small-text">© 2021 Printify, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript" src="/static/js/all.min.js"></script>
+
+</body>
+</html>
